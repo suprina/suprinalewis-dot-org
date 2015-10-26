@@ -10,7 +10,7 @@ app.config['DEBUG'] = True
 def hello():
     """Return a friendly HTTP greeting."""
     if request.method == 'POST':
-        return "No {}".format(request.form.get("myname"))
+        return "Yes {}".format(request.form.get("myname"))
     return "<form id='myform' method='POST'><input name='myname'/></form>"
 
 @app.errorhandler(404)
